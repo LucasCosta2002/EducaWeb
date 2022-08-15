@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaWeb</title>
+
+    <!-- Fonts --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="build/css/app.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+    <header class="header">
+
+        <section class="header__contenedor contenedor">
+        
+            <div class="barra">
+                <a href="#inicio" class="contenedor__logo">Educa<span>Web</span></a>       
+                <div class="mobile-menu">
+                    <img src="build/img/menu.png" alt="">
+                </div>         
+            </div>
+
+
+            <nav class="navegacion">
+                <a class="navegacion__link" href="#inicio">Inicio</a>
+                <a class="navegacion__link" href="#info">Información</a>
+                <a class="navegacion__link" href="#cursos">Cursos</a>
+                <a class="navegacion__link" href="#profesores">Profesores</a>
+                <a class="navegacion__link" href="#alumnos">Alumnos</a>
+                <a class="navegacion__link" href="#contacto">Contacto</a>
+            </nav>
+
+
+        </section>
+    </header>
+
+    <section class="inicio contenedor" id="inicio">
+
+        <div class="grid">
+
+            <div class="contenido">
+                <h3>Educación <span>Online</span></h3>
+                <a href="#contacto" class="contenido__boton">Contactar</a>
+            </div>
+
+            <div class="imagen">
+                <picture>
+                    <img loading="lazy" src="build/img/homg-img.svg" alt="">
+                </picture>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="numeros contenedor">
+        <div class="numeros__grid">
+
+            <div class="box">
+                <i class="fa-solid fa-graduation-cap icono"></i>
+                <div class="box__contenido">
+                    <h3>+180</h3>
+                    <p>Cursos</p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-user-graduate"></i>
+                <div class="box__contenido">
+                    <h3>+1500</h3>
+                    <p>Estudiantes</p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <div class="box__contenido">
+                    <h3>+80</h3>
+                    <p>Profesores</p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-face-smile"></i>
+                <div class="box__contenido">
+                    <h3>100%</h3>
+                    <p>Satisfaction</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="informacion contenedor" id="info">
+        <div class="informacion__grid">
+            <div class="informacion__imagen">
+                <img src="build/img/about-img.svg" alt="imagen libro">
+            </div>
+            <div class="informacion__contenido">
+                <h3>¿Por qué elegirnos?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur </p>
+                <a href="#contacto">Contactanos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cursos contenedor" id="cursos">
+        <h1 class="cursos__heading">Nuestros <span>Cursos</span></h1>
+
+        <div class="swiper cursos-slider">
+
+            <div class="swiper-wrapper">
+      
+               <div class="swiper-slide slide">
+                  <img src="build/img/course-1.svg" alt="">
+                  <h3>Desarrollo Web</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellat!</p>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <img src="build/img/course-2.svg" alt="">
+                  <h3>Marketing Digital</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellat!</p>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <img src="build/img/course-3.svg" alt="">
+                  <h3>Ciencia y Biologia</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellat!</p>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <img src="build/img/course-4.svg" alt="">
+                  <h3>Diseño Gráfico</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellat!</p>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <img src="build/img/course-5.svg" alt="">
+                  <h3>Profesorados</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellat!</p>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <img src="build/img/course-6.svg" alt="">
+                  <h3>Ingenierias</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, repellat!</p>
+               </div>
+      
+            </div>
+      
+            <div class="swiper-pagination"></div>
+      
+         </div>
+    </section>
+
+    <section class="profesores contenedor" id="profesores">
+        <h1 class="profesores__heading">Profesores <span>Expertos</span></h1>
+
+        <div class="swiper profesores-slider">
+
+            <div class="swiper-wrapper">
+      
+               <div class="swiper-slide slide">
+                  <img src="build/img/tutor-1.png" alt="">
+                  <div class="share">
+                     <a href="#" class="fab fa-facebook-f"></a>
+                     <a href="#" class="fab fa-twitter"></a>
+                     <a href="#" class="fab fa-instagram"></a>
+                     <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+                  <h3>Lucas</h3>
+               </div>
+               
+               <div class="swiper-slide slide">
+                  <img src="build/img/tutor-2.png" alt="">
+                  <div class="share">
+                     <a href="#" class="fab fa-facebook-f"></a>
+                     <a href="#" class="fab fa-twitter"></a>
+                     <a href="#" class="fab fa-instagram"></a>
+                     <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+                  <h3>Lucas</h3>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <img src="build/img/tutor-3.png" alt="">
+                  <div class="share">
+                     <a href="#" class="fab fa-facebook-f"></a>
+                     <a href="#" class="fab fa-twitter"></a>
+                     <a href="#" class="fab fa-instagram"></a>
+                     <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+                  <h3>Lucas</h3>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <img src="build/img/tutor-4.png" alt="">
+                  <div class="share">
+                     <a href="#" class="fab fa-facebook-f"></a>
+                     <a href="#" class="fab fa-twitter"></a>
+                     <a href="#" class="fab fa-instagram"></a>
+                     <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+                  <h3>Lucas</h3>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <img src="build/img/tutor-5.png" alt="">
+                  <div class="share">
+                     <a href="#" class="fab fa-facebook-f"></a>
+                     <a href="#" class="fab fa-twitter"></a>
+                     <a href="#" class="fab fa-instagram"></a>
+                     <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+                  <h3>Lucas</h3>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <img src="build/img/tutor-6.png" alt="">
+                  <div class="share">
+                     <a href="#" class="fab fa-facebook-f"></a>
+                     <a href="#" class="fab fa-twitter"></a>
+                     <a href="#" class="fab fa-instagram"></a>
+                     <a href="#" class="fab fa-linkedin"></a>
+                  </div>
+                  <h3>Lucas</h3>
+               </div>
+      
+            </div>
+      
+            <div class="swiper-pagination"></div>
+      
+         </div>
+    </section>
+
+    <section class="alumnos contenedor" id="alumnos">
+        <h1 class="alumnos__heading">Opiniones de <span>Alumnos</span></h1>
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+      
+               <div class="swiper-slide slide">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+                  <div class="user">
+                     <img src="build/img/pic-1.png" alt="">
+                     <div class="user-info">
+                        <h3>Lucas</h3>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+                  <div class="user">
+                     <img src="build/img/pic-2.png" alt="">
+                     <div class="user-info">
+                        <h3>Lucas</h3>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+                  <div class="user">
+                     <img src="build/img/pic-3.png" alt="">
+                     <div class="user-info">
+                        <h3>Lucas</h3>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+                  <div class="user">
+                     <img src="build/img/pic-4.png" alt="">
+                     <div class="user-info">
+                        <h3>Lucas</h3>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+                  <div class="user">
+                     <img src="build/img/pic-5.png" alt="">
+                     <div class="user-info">
+                        <h3>Lucas</h3>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+      
+               <div class="swiper-slide slide">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus atque fuga delectus numquam consequatur velit autem distinctio possimus culpa!</p>
+                  <div class="user">
+                     <img src="build/img/pic-6.png" alt="">
+                     <div class="user-info">
+                        <h3>Lucas</h3>
+                        <div class="stars">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star-half-alt"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+      
+            </div>
+      
+            <div class="swiper-pagination"></div>
+      
+         </div>
+    </section>
+
+    <section class="contacto contenedor" id="contacto">
+
+        <h1 class="contacto__heading">Contactanos</h1>
+     
+        <div class="contacto__flex">
+     
+           <div class="imagen">
+              <img src="build/img/contact-img.svg" alt="">
+           </div>
+     
+            <form action="/" method="post" class="formulario">
+                <span>Nombre</span>
+                <input type="text" required placeholder="Tu nombre completo" maxlength="50" name="nombre" class="box">
+                <span>Email</span>
+                <input type="email" required placeholder="Tu email" maxlength="50" name="email" class="box">
+                <span>Telefono</span>
+                <input type="tel" required placeholder="Número de telefono" max="9999999999" min="0" name="telefono" class="box" onkeypress="if(this.value.length == 10) return false;">
+                <span>Selecciona un curso</span>
+                <select name="couses" class="box" required>
+                    <option value="" disabled selected>-- seleccionar --</option>
+                    <option value="Desarrollo Web">Desarrollo Web</option>
+                    <option value="Ciencia y Biologia">Ciencia y Biologia</option>
+                    <option value="Ingenierias">Ingenierias</option>
+                    <option value="Marketing Digital">Marketing Digital</option>
+                    <option value="Diseño Gráfico">Diseño Gráfico</option>
+                    <option value="Profesorados">Profesorados</option>
+                    <option value="Estudio Social">Estudio Social</option>
+                    <option value="Data Analisis">Data Analisis</option>
+                    <option value="Intelgencia Artificial">Intelgencia Artificial</option>
+                </select>
+                <span>Selecciona tu género</span>
+                <div class="radio">
+                    <input type="radio" name="genero" value="masculino" id="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="genero" value="femenino" id="femenino">
+                    <label for="femenino">Femenino</label>
+                </div>
+                <input type="submit" value="Enviar" class="formulario__boton" name="send">
+            </form>
+     
+        </div>
+     
+    </section>
+
+    <footer class="footer">
+            <div class="contenedor">
+               <div class="redes">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-youtube"></a>
+               </div>
+            <div class="credit">&copy; copyright 2022 <span>Lucas Costamagna</span></div>   
+         </div>
+     </footer>
+     
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="src/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/535a09cd05.js" crossorigin="anonymous"></script>
+</body>
+</html>

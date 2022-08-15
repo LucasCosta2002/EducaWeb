@@ -1,0 +1,58 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.alumnos {
+    margin-top: 4rem;
+    &__heading {
+        color: v.$blanco;
+        text-align: center;
+        span{
+            color: v.$primario;
+        }
+    }
+
+    .slide {
+        background-color: v.$secundarioLight;
+        border-radius: .5rem;
+        padding: 2rem;
+        margin-bottom: 4rem;
+        user-select: none;
+
+        p{
+            line-height: 2;
+            color: v.$blancoLight;
+            font-size: 1.6rem;
+            margin: 0;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+
+            h3 {
+                color: v.$blanco;
+                margin-bottom: 1rem;
+                font-size: 2rem;
+            }
+            img {
+                height: 7rem;
+                width: 7rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .stars {
+                color: v.$primario;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .swiper-pagination-bullet{
+        background-color: v.$blanco;
+    }
+      
+    .swiper-pagination-bullet-active{
+        background-color: v.$primario;
+    }
+}

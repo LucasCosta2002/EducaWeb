@@ -1,0 +1,79 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contacto {
+    margin-top: 4rem;
+    &__heading {
+        color: v.$blanco;
+        text-align: center;
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .imagen {
+        flex: 1 1 40rem;
+
+        img{
+            width: 100%;            
+        }
+
+    }
+    .formulario{
+        flex: 1 1 40rem;
+
+        span {
+            font-size: 1.8rem;
+            color: v.$blancoLight;
+        }
+        .box{
+            width: 100%;
+            margin: 1rem 0 2rem 0;
+            border-radius: .5rem;
+            padding: 1.4rem;
+            font-size: 1.8rem;
+            color: v.$blanco;
+            background-color: v.$secundarioLight;
+            border-style: none;
+            text-transform: none;
+        }
+        .radio {
+            margin: 1rem 0 2rem 0;
+
+            label {
+                cursor: pointer;
+                font-size: 1.6rem;
+                margin-left: .5rem;
+                color: v.$blancoLight;
+            }
+            #femenino {
+                margin-left: 2rem;
+            }
+
+            input{
+                width: 2rem;
+                height: 2rem;
+                appearance: none;
+                background-color: v.$blancoLight;
+                cursor: pointer;
+                &:checked {
+                    background-color: v.$primario;
+                    border-radius: .5rem;
+                }
+            }
+        }
+        &__boton {
+            @include m.boton(v.$secundarioLight, v.$blanco);
+            width: 50%;
+            margin: 1rem auto 0 auto;
+            border-radius: 5rem;
+            @include m.tablet {
+                width: 30%;
+                margin: 0;
+            }
+        }
+    }
+}

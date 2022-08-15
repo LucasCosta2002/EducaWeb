@@ -1,0 +1,19 @@
+@use 'variables' as v; 
+@use 'base/mixins' as m;
+
+
+.text-center {
+    text-align: center;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.seccion {
+    padding: 3rem 0;
+    @include m.tablet {
+        padding: 8rem 0;
+    }
+}

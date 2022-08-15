@@ -1,0 +1,60 @@
+@use 'variables' as v; 
+@use 'mixins' as m; 
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: v.$fuentePrincipal;
+    font-size: 1.6rem;
+    background-color: v.$secundario;
+}
+p {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    margin: 0 0 2rem  0 ;
+}
+h1 {
+    font-size: 4rem;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+::-webkit-scrollbar{
+    height: .5rem;
+    width: .5rem;
+ }
+ 
+ ::-webkit-scrollbar-track{
+    background-color: transparent;
+ }
+ 
+ ::-webkit-scrollbar-thumb{
+    background-color: v.$primario;
+    border-radius: 5rem;
+ }
+ 

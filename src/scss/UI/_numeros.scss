@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.numeros {
+    margin-top: 5rem;
+    &__grid{
+        @include m.grid (1,1rem);
+        @include m.tablet {
+            @include m.grid (2,1rem);
+        }
+        @include m.desktop {
+            @include m.grid (4,1rem);
+        }
+    }
+
+    .box{
+        background-color: v.$secundarioLight;
+        padding: 1.6rem;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+
+        i {
+            color: v.$primario;
+            font-size: 5rem;
+        }
+        &__contenido {
+            
+            h3{
+                margin: 0;
+                color: v.$blanco;
+                font-size: 2rem;
+                margin-bottom: .5rem;
+            }
+            p{
+                margin: 0;
+                color: v.$blancoLight;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
